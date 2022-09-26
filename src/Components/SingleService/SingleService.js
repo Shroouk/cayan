@@ -136,7 +136,7 @@ const editURL = (pathString)=>{
                     <>
                     <div className="row mb-3">
                             <div className="col-sm-1 col-1"> <i className="fa fa-check single-check"></i> </div>
-                            <div className="col-sm-10 col-10">{bnft.listItem} </div>
+                            <div className="col-sm-10 col-10">{bnft} </div>
                         </div> 
 
                     </>
