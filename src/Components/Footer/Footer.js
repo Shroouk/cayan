@@ -40,7 +40,7 @@ const Footer = (props)=>{
                         <span>Cayan is a partner with Drexel Oilfield</span>
                     </div>
                     <div className='col'>
-                        <img className='' src="/assets/Drexel.png"/>
+                        <img className='' src="/assets/Drexel.png" alt='Drexel'/>
                     </div>
                    
                 </div>

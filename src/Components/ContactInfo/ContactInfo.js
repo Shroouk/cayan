@@ -66,7 +66,7 @@ class ContactInfo extends Component {
 
                                 {
                                 this.state.contactTexts.map((contacttxt)=>(
-                                    <>
+                                    
                                         <address key = { contacttxt.id }>
                                             <div>
                                                 <div className="box-icon">
@@ -98,7 +98,7 @@ class ContactInfo extends Component {
                                                 </p>
                                             </div>                                  
                                         </address>
-                                        </>
+                                        
                                 ))
                                 }
 

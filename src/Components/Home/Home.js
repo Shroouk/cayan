@@ -23,7 +23,7 @@ class Home extends Component {
             <header className='hero'>
             <div className="overlay">
             <h1>CAYAN</h1>
-                <img className='hero-logo' src='/assets/logo2.png' alt='cayan-logo-img'/>
+                <img  className='hero-logo' src='/assets/logo2.png' alt='cayan-logo-img'/>
             <h3>Oil Company Limited</h3>
             
             <div className='typing-txt'>
@@ -142,7 +142,7 @@ class Home extends Component {
                         </div>
                         </div>
                         <div className='col-sm-12 col-lg-6'>
-                            <img className='person-img' src='/assets/img.png'/>
+                            <img className='person-img' src='/assets/img.png' alt="cayan-img"/>
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@ class Home extends Component {
             <div className='container text-center'>
                 <div className='row justify-content-center'>
                 {/* <i className="fa fa-quote-left slide-quote"></i> */}
-                <img className='carousel-logo' src='/assets/logo2.png' alt='cayan-logo-img'/>
+                <img className='carousel-logo' src='/assets/logo2.png' alt='cayan-logo-img' />
                 </div>
 
                 <div className='row'>
@@ -189,7 +189,7 @@ class Home extends Component {
                     <div className='col-12  col-lg-4'>
                     <article className="card">
                     <picture className="thumbnail">
-                    <img className="category__01" src="assets/target.png" alt="" />
+                    <img className="category__01" src="assets/target.png" alt="cayan-img" />
                     </picture>
                     <div className="card-content">
                     <p className="category category__01">Our mission</p>
@@ -205,7 +205,7 @@ class Home extends Component {
                     <div className='col-12  col-lg-4'>
                     <article className="card">
                     <picture className="thumbnail">
-                    <img className="category__01" src="assets/goal.png" alt="" />
+                    <img className="category__01" src="assets/goal.png" alt="cayan-img" />
                     </picture>
                     <div className="card-content">
                     <p className="category category__01">Our vision</p>
@@ -253,7 +253,7 @@ class Home extends Component {
 
             <div className='row'>
             <div className="col-sm-12 col-lg-6 align-self-center">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.8077933723785!2d50.11156092951944!3d26.42967853379894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49fb71f651e279%3A0x178b36bb1550bb86!2sAlWaha%20Downtown%20Mall!5e0!3m2!1sen!2seg!4v1652189910983!5m2!1sen!2seg"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe title="cayan-address"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.8077933723785!2d50.11156092951944!3d26.42967853379894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e49fb71f651e279%3A0x178b36bb1550bb86!2sAlWaha%20Downtown%20Mall!5e0!3m2!1sen!2seg!4v1652189910983!5m2!1sen!2seg"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 {/*         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463876.9397147176!2d46.54234411876101!3d24.725555344345064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2seg!4v1649682749368!5m2!1sen!2seg"   allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
  */}      
             </div>

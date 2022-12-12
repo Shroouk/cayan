@@ -2,7 +2,7 @@
 .hero {
 /* 	background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
  	background: url('http://prod-upp-image-read.ft.com/c288bdfa-671f-11e7-9a66-93fb352ba1fe');*/
-   background: url('/public/assets/hero.jpg');
+   background: url('/assets/hero.jpg');
     text-align: center;
 	width: 100%;
 	height: calc(100vh - 195px);
@@ -335,6 +335,10 @@ px
   }
 
 /* ================ vision section =============== */
+.vision-sec article{
+  height: 100%;
+}
+
 .vision-sec .card {
   border: 2px solid #e7e7e7;
   border-radius: 4px;
@@ -510,6 +514,15 @@ iframe{
 
   .hero{
     height: calc(93vh);
+  }
+  
+}
+
+
+@media (min-width: 1440px) {
+  .vision-sec{
+    width: 75%;
+    margin: 5px auto;
   }
   
 }

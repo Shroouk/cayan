@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useParams, withRouter } from "react-router";
+import { useParams } from "react-router";
 import axios from "axios";
 
 import Spinner from '../Spinner/Spinner';
-import ContactInfo from '../ContactInfo/ContactInfo';
 import Header from '../Header/Header';
-import MainFunction from '../MainFunction/MainFunction';
 import './SingleService.css'
 
 
@@ -13,7 +11,6 @@ const SingleService = (props) => {
 	const params = useParams();
 	const [SingleService, setSingleService] = useState({});
 
-    //const [SingleServicesBenefits, setSingleServicesBenefits] = useState({});
 
 
 const editURL = (pathString)=>{
@@ -54,7 +51,7 @@ const editURL = (pathString)=>{
 
       <div className="col-sm-2 col-lg-3 thumbnail-wrapper">
       <div className="thumbnail3 t-one">
-          <img className='thumbnail2-img' src='/assets/pump-jack.svg'/>
+          <img className='thumbnail2-img' src='/assets/pump-jack.svg' alt="cayan-service"/>
       </div>
       
       </div>
@@ -94,16 +91,15 @@ const editURL = (pathString)=>{
 
             
 
-            <>
+          
         
-           <div className="row justify-content-center mb-5"><img className="service-img" src={editURL(`https://backend.mo3ts.com/services/${image.image}`)}/></div>
-            </>
+           <div className="row justify-content-center mb-5" key={image}><img className="service-img" src={editURL(`https://backend.mo3ts.com/services/${image.image}`)} alt="cayan-service-img" /></div>
+            
         ))
       }
     </>
   }
-            {/* <div className="row justify-content-center mb-5"><img className="service-img" src="/assets/img1.png"/></div>
-            <div className="row justify-content-center mb-5"><img className="service-img" src="/assets/img2.png"/></div> */}
+            
         
         
         </div>
@@ -127,14 +123,14 @@ const editURL = (pathString)=>{
     <>
       {
           SingleService.lists.map((list)=>(
-            <>
-            <div className="mb-5">
+           
+            <div className="mb-5" key={Math.random()}>
             <div className="row"> <h3 className="section-title single-do-sec">{list.listTitle}</h3></div>
 
             {
                 list.content.map((bnft)=>(
                     <>
-                    <div className="row mb-3">
+                    <div className="row mb-3" key={Math.random()}>
                             <div className="col-sm-1 col-1"> <i className="fa fa-check single-check"></i> </div>
                             <div className="col-sm-10 col-10">{bnft} </div>
                         </div> 
@@ -143,7 +139,7 @@ const editURL = (pathString)=>{
                 ))
             }
            </div>
-            </>
+            
         ))
       }
     </>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Spinner } from 'react-bootstrap';
 import axios from '../../axios-data';
 
 
@@ -21,7 +22,7 @@ componentDidMount(){
                     id:key
                 })
              }
-             console.log(fetchedcareerIntroTexts)
+           //  console.log(fetchedcareerIntroTexts)
 
              
              this.setState({loading:false, careerIntroTexts:fetchedcareerIntroTexts})
@@ -40,14 +41,12 @@ componentDidMount(){
 
 
   render() {
-    
-   
+    let introContext = <Spinner/>
 
-    return (
-      <>
-         <div className='row'>
-               <div className='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
-                   < h3 className='career-heading'>A couple things about our team.</h3>
+    if(this.state.careerIntroTexts.length!=0){
+      introContext = <>
+         <div className='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+                   <h3 className='career-heading'>A couple things about our team.</h3>
                </div>
 
                <div className='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
@@ -66,16 +65,25 @@ componentDidMount(){
 
                     {
                         this.state.careerIntroTexts.map((txt)=>(
-                            <>
+                           
                               <div className="row mb-3">
-                            <div className="col-sm-1 col-1"> <i class="fa fa-angle-right"></i></div>
+                            <div className="col-sm-1 col-1"> <i className="fa fa-angle-right"></i></div>
                             <div className="col-sm-11 col-11">{txt.detail} </div>
                         </div>
-                            </>
+                            
                         ))
                     }
                 </div>
                </div>
+      </>
+    }
+    
+   
+
+    return (
+      <>
+         <div className='row'>
+              {introContext}
            </div>
       </>
     )

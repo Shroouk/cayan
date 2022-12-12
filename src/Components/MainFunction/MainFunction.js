@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from '../../axios-data';
-import Header from '../Header/Header';
 
 
 import './MainFunction.css';
@@ -70,7 +69,7 @@ class MainFunction extends Component {
 
 { 
    this.state.mainFuncTexts.map((mainTxt)=>(
-       <>
+       
         <div className="demo-card demo-card--step1">
         <div className="timeline-head">
             <div className="number-box">
@@ -79,7 +78,7 @@ class MainFunction extends Component {
             <p>{mainTxt.func}</p>
         </div>
         </div>
-       </>
+       
    ))
 
 }

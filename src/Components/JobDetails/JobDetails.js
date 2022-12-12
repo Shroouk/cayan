@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useParams, withRouter } from "react-router";
+import { useParams } from "react-router";
 import axios from "axios";
 
 import Spinner from '../Spinner/Spinner';
-import ContactInfo from '../ContactInfo/ContactInfo';
 import Header from '../Header/Header';
-import MainFunction from '../MainFunction/MainFunction';
 import './JobDetails.css'
 
 
@@ -43,7 +41,7 @@ const JobDetails = (props) => {
       
     <div className='container details-wrapper'>
       <div className='row text-center mt-5'>
-          < h3 className='page-title'>{JobDetails.title}</h3>
+          <h3 className='page-title'>{JobDetails.title}</h3>
       </div>
 
       <div className='row mt-5'>
@@ -63,33 +61,33 @@ const JobDetails = (props) => {
                   <div className="col-sm-2 details-col">Salary : </div> <div className="col-sm-10">{JobDetails.salary}</div>
                 </div>
             
-              <h2 className="section-title sub">Descriptions: </h2>
+              
               {!JobDetails.descriptions ||
     <>
+    <h2 className="section-title sub">Descriptions: </h2>
       {
-          JobDetails.descriptions.map((desc)=>(
-            <>
-            
-            <div className="row mb-3">
-                            <div className=""><i className="fa fa-caret-right single-check"></i> {desc.detail} </div>
+        
+       
+        <div className="row mb-3">
+                            <div className=""><i className="fa fa-caret-right single-check"></i> {JobDetails.descriptions} </div>
                         </div>
-            </>
-        ))
+                      
       }
     </>
   }
 
-<h2 className="section-title sub">Requirements: </h2>
+
               {!JobDetails.requirements ||
     <>
+    <h2 className="section-title sub">Requirements: </h2>
       {
           JobDetails.requirements.map((reqmnt)=>(
-            <>
+           
             
-            <div className="row mb-3">
-                            <div className=""><i className="fa fa-check single-check"></i> {reqmnt.detail} </div>
+            <div className="row mb-3" key={reqmnt}>
+                            <div className=""><i className="fa fa-check single-check"></i> {reqmnt} </div>
                         </div>
-            </>
+            
         ))
       }
     </>

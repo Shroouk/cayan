@@ -12,7 +12,7 @@ class Card extends Component {
     <div className="card card-one">
       <div className="content">
         <div className="thumbnail2 t-one">
-            <img className='thumbnail2-img' src='assets/pump-jack.svg'/>
+            <img className='thumbnail2-img' src='assets/pump-jack.svg' alt='cayan-img'/>
         </div>
         
         <h4><Link to="/single-service" className="service-link">{this.props.service_name}</Link></h4>

@@ -21,7 +21,7 @@ const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 		<p ><span className=''>Yrs of Exp: </span>{this.props.careerYears}</p>
     {/* <p>{this.state.jobAt.getUTCMonth() + 1} / {this.state.jobAt.getUTCDate()} / {this.state.jobAt.getUTCFullYear()}</p> */}
     <p className="job-description">{diffDays} day ago</p>
-		<Link to={`/career/vacancy/${+this.props.careerId+1}`} className="job-cta">
+		<Link to={`/career/vacancy/${+this.props.careerId}`} className="job-cta">
 			Apply Now
 		</Link>
 	    </div>

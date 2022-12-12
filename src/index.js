@@ -10,7 +10,6 @@ import '../node_modules/popper.js/dist/popper.min.js'
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js' */
 
 import '../node_modules/font-awesome/css/font-awesome.min.css';
-import { Carousel } from '../node_modules/react-bootstrap/Carousel';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro' 
 

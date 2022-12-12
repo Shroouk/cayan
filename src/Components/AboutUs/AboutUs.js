@@ -4,8 +4,7 @@ import Spinner from '../Spinner/Spinner';
 import axios from '../../axios-data';
 
 import Header from '../Header/Header';
-import './AboutUs.css'
-import MoreAbout from '../MoreAbout/MoreAbout';
+import './AboutUs.css';
 import MainFunction from '../MainFunction/MainFunction';
 
 class AboutUs extends Component {
@@ -54,28 +53,7 @@ componentDidMount(){
 
             <p className="subtitle">CAYAN Petroleum Services Company is a regional leader with professional experience in providing the oil and gas industry with a wide range of oilfield services.</p>
             </div>
-            {/* <img className="main-image" alt='cayan-about-us-image' src="/assets/about.jpg"/>
-
-            
-            
-            <div className="main-text">
-
-
-            {
-                this.state.aboutTexts.map((txt) => ( 
-                <div key = { txt.id } >
-                   <h2 className="section-title">{txt.title}</h2>
-                  
-                   {txt.AboutUs_Contents.map((aboutcontent)=>(
-                     
-                     <p>{aboutcontent.detail}</p>
-                   ))}
-                    </div>
-                ))
-            }
-
-            
-             </div> */}
+           
 
              <div className="row">
                <div className="col-12 col-md-4">

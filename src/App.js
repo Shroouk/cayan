@@ -1,28 +1,20 @@
 import './App.css';
 import React, { Component } from 'react';
-import { BrowserRouter, Navigate, Route , Routes} from 'react-router-dom';
-import { useHistory, useParams } from 'react-router-dom'
+import { BrowserRouter, Route , Routes} from 'react-router-dom';
+
 
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navigation/Navbar';
 import Footer from './Components/Footer/Footer';
 import AboutUs from './Components/AboutUs/AboutUs';
 import ContactUs from './Components/ContactUs/ContactUs';
-import Services from './Components/Services/Services';
+//import Services from './Components/Services/Services';
 import Careers from './Components/Careers/Careers';
 import JobDetails from './Components/JobDetails/JobDetails';
 import SingleService from './Components/SingleService/SingleService';
-import MainFunction from './Components/MainFunction/MainFunction';
+//import MainFunction from './Components/MainFunction/MainFunction';
+import NotFound from './Components/NotFound/NotFound';
 
-/* function App() {
-  return (
-    <>
-    <Navbar/>
-    <Home/>
-    <Footer/>
-    </>
-  );
-} */
 
 
 class App extends Component {
@@ -59,6 +51,7 @@ class App extends Component {
         {/* <Route path="/details" element={<JobDetails/>} /> */}
         <Route path="/single-service" element={<SingleService/>} />
         
+        <Route path='*' element={<NotFound />}/>
         </Routes>
         
      <Footer/>

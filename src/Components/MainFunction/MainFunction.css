@@ -82,7 +82,7 @@
       display: flex;
       flex-flow: column wrap;
       width: 1170px;
-      height: 815px;
+      max-height: 1000px;
       margin: 0 auto;
     }
   }
